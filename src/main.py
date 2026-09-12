@@ -5,7 +5,7 @@ app = typer.Typer()
 
 
 @app.command()
-def main(file: str, flag: str):
+def main(file: str, flag: str) -> None:
 
     df = pd.read_csv(file)
     df = df.dropna()
