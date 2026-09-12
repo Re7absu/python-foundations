@@ -21,7 +21,7 @@ class InvalidInputError(Exception):
 
 # withcli
 @app.command()
-def getName(name: str):
+def getName(name: str) -> None:
     if not name.isalpha():
         raise InvalidInputError("enter alpha please")
     print(f"hello{name}")

@@ -1,4 +1,4 @@
-def calculate_total(price, quantity):
+def calculate_total(price: float, quantity: int) -> float:
     total = price + quantity
     return total
 
