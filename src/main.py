@@ -9,6 +9,11 @@ def main(file: str, flag: str) -> None:
 
     df = pd.read_csv(file)
     df = df.dropna()
+    required_columns = {"status", "age"}
+
+    if not required_columns.issubset(df.columns):
+        raise ValueError("CSV file must contain 'status' and 'age' columns.")
+
     df = df[df["status"] == flag]
     print(df)
 
