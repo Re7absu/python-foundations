@@ -27,3 +27,29 @@ This project covers:
 - Black
 - Mypy
 - python-dotenv
+
+
+
+## Installation
+Install the project dependencies:
+Clone the repository:
+
+```bash
+git clone <repository-url>
+cd python-foundations
+
+Running the Project
+uv sync
+
+Run the CLI application:
+uv run python scripts/cli.py
+
+
+## Running the CLI
+The CLI reads a CSV file, validates the required columns, filters the data by status, and displays a summary.
+Run the CLI with:
+
+```bash
+Example:
+uv run python src/main.py data.csv active
+
