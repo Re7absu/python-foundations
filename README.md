@@ -53,3 +53,34 @@ Run the CLI with:
 Example:
 uv run python src/main.py data.csv active
 
+
+## Project Structure
+
+```text
+python-foundations/
+├── scripts/
+│   ├── main.py
+│   ├── script1.py
+│   ├── script2.py
+│   └── script3.py
+├── tests/
+├── learning-log.md
+├── git-notes.md
+├── .env.example
+├── .gitignore
+├── pyproject.toml
+└── uv.lock
+
+
+The project contains Python scripts, tests, documentation, configuration files, and environment configuration.
+
+Code Quality
+
+The project uses the following tools:
+
+Ruff for linting
+Black for formatting
+Mypy for type checking
+
+The project quality checks can be run using the project's quality script.
+
