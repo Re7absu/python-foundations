@@ -123,3 +123,7 @@ The [learning log](learning-log.md) records the details. In short: comprehension
 - Add tests for the refactored scripts and the custom exception.
 - Make the required columns and the summary metrics configurable.
 - Add a GitHub Actions workflow that runs the tests and quality checks on every pull request.
+
+## License
+
+Released under the [MIT License](LICENSE).
